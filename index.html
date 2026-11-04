@@ -14,7 +14,7 @@
         }
 
         .card {
-            background: white;
+            background: rgb(255, 255, 255);
             max-width: 450px;
             margin: 0 auto;
             padding: 30px;
@@ -41,6 +41,53 @@
             font-size: 14px;
             margin: 5px;
         }
+
+        /* Container to keep buttons side by side and centered */
+        .links-container {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        /* Base button styling */
+        .btn {
+            text-decoration: none;
+            /* Removes the default underline */
+            background-color: #2563eb;
+            /* Solid blue */
+            color: #ffffff;
+            /* White text */
+            padding: 10px 18px;
+            /* Clickable area */
+            border-radius: 8px;
+            /* Rounded corners */
+            font-weight: 500;
+            display: inline-block;
+            transition: all 0.2s ease;
+            /* Makes hover smooth */
+        }
+
+        /* Hover effect on primary button */
+        .btn:hover {
+            background-color: #1d4ed8;
+            /* Slightly darker blue */
+            transform: translateY(-2px);
+            /* Lifts up slightly */
+        }
+
+        /* Secondary outline button */
+        .btn-outline {
+            background-color: transparent;
+            color: #2563eb;
+            border: 1.5px solid #2563eb;
+        }
+
+        /* Hover effect on outline button */
+        .btn-outline:hover {
+            background-color: #eff6ff;
+            /* Soft light blue tint */
+        }
     </style>
 </head>
 
@@ -53,6 +100,10 @@
             <span class="badge">HTML</span>
             <span class="badge">Git</span>
             <span class="badge">GitHub</span>
+        </div>
+        <div class="links-container">
+            <a href="https://github.com/nipsamakwana2007-cell" target="_blank" class="btn">My GitHub</a>
+            <a href="mailto:nipsamakwana2007@gmail.com" class="btn btn-outline">Contact Me</a>
         </div>
     </div>
 
