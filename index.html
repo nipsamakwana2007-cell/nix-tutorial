@@ -88,12 +88,34 @@
             background-color: #eff6ff;
             /* Soft light blue tint */
         }
+
+        /* Circular avatar styling */
+        .profile-img {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            /* Perfect circle banata hai */
+            border: 3px solid #2563eb;
+            /* Primary blue border */
+            margin-bottom: 12px;
+            /* Heading se thoda gap */
+            object-fit: cover;
+            /* Image proportion stretch nahi hone deta */
+            transition: transform 0.3s ease;
+            /* Smooth animation */
+        }
+
+        /* Hover par subtle scale effect */
+        .profile-img:hover {
+            transform: scale(1.08);
+        }
     </style>
 </head>
 
 <body>
 
     <div class="card">
+        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Nix" alt="Profile Avatar" class="profile-img">
         <h1>Hello, I'm Learning Web Dev! 👋</h1>
         <p>This is my first live website built with HTML & hosted on GitHub.</p>
         <div>
@@ -109,4 +131,4 @@
 
 </body>
 
-</html></html> `
+</html> `
